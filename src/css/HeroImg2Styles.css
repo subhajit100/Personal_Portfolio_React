@@ -1,0 +1,53 @@
+.hero-img {
+    height: 60vh;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.hero-img::before {
+    content: "";
+    background: url('../assets/about-bg.png');
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img h1 {
+    font-size: 2.4rem;
+}
+
+.hero-img p {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+
+/* for mobile devices */
+
+@media only screen and (max-width : 550px) {
+    .hero-img h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-img p {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-top: 0.8rem;
+    }
+}
