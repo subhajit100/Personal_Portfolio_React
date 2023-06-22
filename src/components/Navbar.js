@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <div className={navColor ? "header header-bg" : "header"}>
-      <Link to="/">
+      <Link to="/" onClick={scrolltoTop}>
         <h1>Portfolio</h1>
       </Link>
 
